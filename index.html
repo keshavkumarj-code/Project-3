@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs | Project 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">DecodeLabs</a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">
+                🌙 Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <p class="tag">BATCH 2026 | PROJECT 3</p>
+
+            <h1>Interactive Web Elements</h1>
+
+            <p>
+                Learn how JavaScript makes websites
+                interactive and responsive to users.
+            </p>
+
+            <button id="changeBtn" class="btn">
+                Click Me
+            </button>
+
+            <h3 id="message">Welcome to DecodeLabs!</h3>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2>About This Project</h2>
+
+            <p>
+                This project demonstrates how JavaScript
+                can change webpage content, control dark
+                mode and create an interactive image gallery.
+            </p>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="gallery" id="gallery">
+            <h2>Explore Our Gallery</h2>
+
+            <p>Click a button to change the featured image.</p>
+
+            <div class="image-box">
+                <img
+                    id="galleryImage"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                    alt="Web development workspace">
+            </div>
+
+            <div class="gallery-buttons">
+                <button class="btn gallery-btn"
+                    data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                    data-alt="Web development workspace">
+                    Coding
+                </button>
+
+                <button class="btn gallery-btn"
+                    data-image="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+                    data-alt="Team working together">
+                    Teamwork
+                </button>
+
+                <button class="btn gallery-btn"
+                    data-image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                    data-alt="People learning with computers">
+                    Learning
+                </button>
+            </div>
+
+            <p id="imageCaption">Coding workspace</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills You Will Learn</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>JavaScript</h3>
+                    <p>Add actions to webpage elements.</p>
+                </article>
+
+                <article class="card">
+                    <h3>DOM Manipulation</h3>
+                    <p>Change HTML content using JavaScript.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Events</h3>
+                    <p>Respond to clicks and user actions.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h2>DecodeLabs</h2>
+        <p>Frontend Development | Project 3</p>
+        <p>Greater Lucknow, India</p>
+        <p>decodelabs.tech@gmail.com</p>
+        <p>&copy; 2026 DecodeLabs</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
